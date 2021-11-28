@@ -1,0 +1,59 @@
+@media screen and (max-width: 758px) {
+  .home-section {
+    & h1,
+    h6,
+    p,
+    .input-control {
+      width: 50%;
+      margin-left: 5rem;
+    }
+    & .title-1 {
+      font-size: 80%;
+    }
+    & h1 {
+      font-size: 140%;
+    }
+    & p {
+      font-size: 90%;
+      text-align: unset;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-section {
+    & h1,
+    h6,
+    p,
+    .input-control {
+      width: 60%;
+      margin-left: 2rem;
+    }
+    & h1 {
+      font-size: 130%;
+    }
+    & .input-control {
+      & label {
+        font-size: 65%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .home-section {
+    & h1,
+    h6,
+    p,
+    .input-control {
+      width: 75%;
+      margin-left: 1.5rem;
+    }
+    & h1 {
+      font-size: 100%;
+    }
+    & p {
+      font-size: 90%;
+      text-align: unset;
+    }
+  }
+}

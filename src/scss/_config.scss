@@ -1,0 +1,26 @@
+$main-1: #c53058;
+$main-2: #5b122c;
+$main-3: #3f7893;
+$font-color: #0d2d3e;
+$bg-color: #c4d3dc;
+$font-family: 'Poppins', sans-serif;
+$transition: all 0.3s linear;
+$light-shadow: 0 5px 15px #0000001a;
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-family;
+  background-color: #fff;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+.App {
+  margin: 2rem auto;
+}
