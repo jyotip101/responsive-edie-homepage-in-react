@@ -1,4 +1,5 @@
 import React from 'react'
+import heroImg from '../images/heroImage.jpg'
 
 const Home = () => {
   return (
@@ -6,7 +7,7 @@ const Home = () => {
       <main className='home-section'>
         <p className='title-1'>Unhappy with your website?</p>
         <h1>We create beautiful and fast web services</h1>
-        <img src='../images/heroImage.jpg' alt='heroImage.jpg' />
+        <img src={heroImg} alt='heroImage.jpg' />
         <h1 className='title-2'>Story, emotion and purpose</h1>
         <p>
           We help transform your ideas into real world applications that will

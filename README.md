@@ -39,7 +39,8 @@
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
+ I have hosted my project on Github pages here you can see the demo.
+while building this website I have learned responsive design and practiced my SCSS skillls
 - Where can I see your demo?
 - What was your experience?
 - What have you learned/improved?
