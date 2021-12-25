@@ -1,0 +1,66 @@
+.services-container {
+  margin: 2.5rem;
+  position: relative;
+
+  & .service-contant {
+    display: grid;
+    max-width: 1000px;
+    margin: 1rem auto;
+    & h1 {
+      width: 200px;
+    }
+    & .services-items {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin: 1rem;
+
+      & .services-item {
+        padding: 1rem;
+        transition: $transition;
+        &:hover {
+          box-shadow: $light-shadow;
+        }
+        & i {
+          padding: 1rem;
+          background: rgba(39, 174, 96, 1);
+          border-radius: 16px;
+          color: #fff;
+        }
+        & h1 {
+          margin: 1rem 0;
+          font-size: 120%;
+          font-weight: 900;
+        }
+        & p {
+          font-weight: 600;
+        }
+        & button {
+          background: rgba(224, 224, 224, 1);
+          outline: none;
+          border-radius: 12px;
+          width: 116px;
+          border: 0;
+          font-size: 16px;
+          font-weight: 500;
+          height: 42px;
+          margin: 1rem 0;
+          transition: $transition;
+
+          &:hover {
+            background-color: $main-1;
+            color: #fff;
+          }
+        }
+      }
+
+      & .services-item:first-child i {
+        padding: 1rem;
+        background-color: $main-1;
+        border-radius: 16px;
+      }
+      & .services-item:last-child i {
+        background: rgba(235, 87, 87, 1);
+      }
+    }
+  }
+}

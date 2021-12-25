@@ -1,59 +1,59 @@
-@media screen and (max-width: 758px) {
-  .home-section {
-    & h1,
-    h6,
-    p,
-    .input-control {
-      width: 50%;
-      margin-left: 5rem;
-    }
-    & .title-1 {
-      font-size: 80%;
-    }
-    & h1 {
-      font-size: 140%;
-    }
-    & p {
-      font-size: 90%;
-      text-align: unset;
-    }
+@media screen and (max-width: 780px) {
+  .services-container .service-contant .service-items {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
-@media screen and (max-width: 400px) {
-  .home-section {
-    & h1,
-    h6,
-    p,
-    .input-control {
-      width: 60%;
-      margin-left: 2rem;
-    }
-    & h1 {
-      font-size: 130%;
-    }
-    & .input-control {
-      & label {
-        font-size: 65%;
+@media screen and (max-width: 500px) {
+  .services-container {
+    & .service-contant {
+      & .service-items {
+        grid-template-columns: auto;
+        background-color: navy;
       }
     }
   }
 }
+@media screen and (max-width: 448px) {
+  .App {
+    & .home-section {
+      & .title-1 {
+        font-size: 12px;
+        margin-left: 1rem;
+      }
+      & h1 {
+        font-size: 24px;
+        width: 260px;
+        margin-left: 1rem;
+      }
+      & p {
+        font-size: 12px;
+        margin-left: 1rem;
+      }
+      & .title-2 {
+        font-size: 24px;
+        width: 11rem;
+        margin-left: 1rem;
+      }
+      & .input-control {
+        width: 100%;
+        margin-left: 1rem;
 
-@media screen and (max-width: 230px) {
-  .home-section {
-    & h1,
-    h6,
-    p,
-    .input-control {
-      width: 75%;
-      margin-left: 1.5rem;
+        & label {
+          width: 100%;
+        }
+      }
+
+      & .input-control {
+        width: auto;
+      }
     }
-    & h1 {
-      font-size: 100%;
-    }
-    & p {
-      font-size: 90%;
-      text-align: unset;
+    & .services-container {
+      & .service-contant {
+        & .service-items {
+          grid-template-columns: auto;
+        }
+      }
     }
   }
 }

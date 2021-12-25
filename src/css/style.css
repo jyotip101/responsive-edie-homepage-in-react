@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
   line-height: 1.5;
+  color: #0d2d3e;
   font-size: 0.875rem;
 }
 
@@ -30,7 +31,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 100vh;
 }
 
 .home-section .title-1 {
@@ -49,10 +49,12 @@ body {
 
 .home-section h1 {
   margin-bottom: 1rem;
+  width: 330px;
 }
 
 .home-section .title-2 {
   margin-top: 1rem;
+  width: 200px;
 }
 
 .home-section img {
@@ -64,13 +66,19 @@ body {
 }
 
 .home-section p {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 600;
+  width: 200px;
   text-align: justify;
 }
 
 .home-section .input-control {
   margin-top: 1.5rem;
+}
+
+.home-section .input-control label {
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .home-section .input-control .input-fields {
@@ -80,7 +88,7 @@ body {
   margin: 0.2rem 0 1rem 0;
   background-color: #ddd;
   border-radius: 3px;
-  width: 100%;
+  width: 200px;
 }
 
 .home-section .input-control .input-fields input {
@@ -100,61 +108,146 @@ body {
   color: #c4d3dc;
   padding: 0.5rem 1rem;
   font-size: 100%;
-  border-radius: 3px;
+  border-radius: 12px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.home-section .input-control .input-fields .btn:hover {
+  background-color: #c53058;
+}
+
+.services-container {
+  margin: 2.5rem;
+  position: relative;
+}
+
+.services-container .service-contant {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+.services-container .service-contant h1 {
+  width: 200px;
+}
+
+.services-container .service-contant .services-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  margin: 1rem;
+}
+
+.services-container .service-contant .services-items .services-item {
+  padding: 1rem;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-@media screen and (max-width: 758px) {
-  .home-section h1,
-  .home-section h6,
-  .home-section p,
-  .home-section .input-control {
-    width: 50%;
-    margin-left: 5rem;
-  }
-  .home-section .title-1 {
-    font-size: 80%;
-  }
-  .home-section h1 {
-    font-size: 140%;
-  }
-  .home-section p {
-    font-size: 90%;
-    text-align: unset;
+.services-container .service-contant .services-items .services-item:hover {
+  -webkit-box-shadow: 0 5px 15px #0000001a;
+          box-shadow: 0 5px 15px #0000001a;
+}
+
+.services-container .service-contant .services-items .services-item i {
+  padding: 1rem;
+  background: #27ae60;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.services-container .service-contant .services-items .services-item h1 {
+  margin: 1rem 0;
+  font-size: 120%;
+  font-weight: 900;
+}
+
+.services-container .service-contant .services-items .services-item p {
+  font-weight: 600;
+}
+
+.services-container .service-contant .services-items .services-item button {
+  background: #e0e0e0;
+  outline: none;
+  border-radius: 12px;
+  width: 116px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 42px;
+  margin: 1rem 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.services-container .service-contant .services-items .services-item button:hover {
+  background-color: #c53058;
+  color: #fff;
+}
+
+.services-container .service-contant .services-items .services-item:first-child i {
+  padding: 1rem;
+  background-color: #c53058;
+  border-radius: 16px;
+}
+
+.services-container .service-contant .services-items .services-item:last-child i {
+  background: #eb5757;
+}
+
+@media screen and (max-width: 780px) {
+  .services-container .service-contant .service-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .home-section h1,
-  .home-section h6,
-  .home-section p,
-  .home-section .input-control {
-    width: 60%;
-    margin-left: 2rem;
-  }
-  .home-section h1 {
-    font-size: 130%;
-  }
-  .home-section .input-control label {
-    font-size: 65%;
+@media screen and (max-width: 500px) {
+  .services-container .service-contant .service-items {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    background-color: navy;
   }
 }
 
-@media screen and (max-width: 230px) {
-  .home-section h1,
-  .home-section h6,
-  .home-section p,
-  .home-section .input-control {
-    width: 75%;
-    margin-left: 1.5rem;
+@media screen and (max-width: 448px) {
+  .App .home-section .title-1 {
+    font-size: 12px;
+    margin-left: 1rem;
   }
-  .home-section h1 {
-    font-size: 100%;
+  .App .home-section h1 {
+    font-size: 24px;
+    width: 260px;
+    margin-left: 1rem;
   }
-  .home-section p {
-    font-size: 90%;
-    text-align: unset;
+  .App .home-section p {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+  .App .home-section .title-2 {
+    font-size: 24px;
+    width: 11rem;
+    margin-left: 1rem;
+  }
+  .App .home-section .input-control {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  .App .home-section .input-control label {
+    width: 100%;
+  }
+  .App .home-section .input-control {
+    width: auto;
+  }
+  .App .services-container .service-contant .service-items {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
