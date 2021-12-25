@@ -1,19 +1,57 @@
 @media screen and (max-width: 780px) {
-  .services-container .service-contant .service-items {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-}
-@media screen and (max-width: 500px) {
-  .services-container {
-    & .service-contant {
-      & .service-items {
-        grid-template-columns: auto;
-        background-color: navy;
+  .App {
+    & .home-section {
+    }
+    & .services-container {
+      margin: 1.5rem;
+      & .service-contant {
+        & .services-items {
+          grid-template-columns: auto auto;
+          margin: 1rem auto;
+        }
+      }
+    }
+    & .ourworks-container {
+      margin: 1.5rem;
+      & .ourworks-contant {
+        & .ourworks-cards {
+          grid-template-columns: auto;
+          margin: 1rem -1rem;
+
+          & .card {
+            margin: 1rem auto;
+          }
+          & .card:first-child,
+          & .card:nth-child(3) {
+            margin-top: 0px;
+          }
+        }
+        & .see-more {
+          width: fit-content;
+          display: block;
+          margin-top: -1rem;
+          margin-left: -0.5rem;
+        }
       }
     }
   }
 }
+@media screen and (max-width: 520px) {
+  .App {
+    & .home-section {
+    }
+    & .services-container {
+      margin: 1.5rem;
+      & .service-contant {
+        & .services-items {
+          grid-template-columns: auto;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 448px) {
   .App {
     & .home-section {
@@ -48,10 +86,22 @@
         width: auto;
       }
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .App {
+    & .home-section {
+      & h1 {
+        width: fit-content;
+      }
+    }
     & .services-container {
+      margin: 1rem;
       & .service-contant {
-        & .service-items {
+        & .services-items {
           grid-template-columns: auto;
+          margin: auto;
         }
       }
     }

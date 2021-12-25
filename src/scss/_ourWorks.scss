@@ -1,0 +1,48 @@
+.ourworks-container {
+  margin: 2.5rem;
+  position: relative;
+
+  & .ourworks-contant {
+    display: grid;
+    max-width: 1000px;
+    margin: 1rem auto;
+    & h1 {
+      width: 212px;
+    }
+    & .ourworks-cards {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 1rem;
+
+      & .card {
+        margin: 0rem 0.5rem;
+        & img {
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
+      & .card:first-child,
+      & .card:nth-child(3) {
+        margin-top: 120px;
+      }
+    }
+
+    & .see-more {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -35px;
+      & p {
+        color: $main-1;
+        cursor: pointer;
+        font-weight: 900;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 1rem;
+        & span {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
