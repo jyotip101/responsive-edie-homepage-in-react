@@ -34,7 +34,6 @@
         }
       }
       & .clients-items-item:last-child {
-        position: absolute;
         right: 1rem;
         display: flex;
         justify-content: center;
@@ -48,6 +47,43 @@
           & img {
             width: 100%;
             border-radius: 12px;
+          }
+        }
+      }
+    }
+
+    & .clients-profile {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 1rem;
+
+      & p {
+        max-width: 438px;
+        width: 100%;
+        text-align: start;
+        font-style: normal;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        font-weight: 900;
+      }
+      & .profile-card {
+        display: flex;
+
+        & img {
+          width: 82px;
+          height: 82px;
+          border-radius: 12px;
+        }
+        & .desc {
+          margin: 0.5rem 1rem;
+          & h1 {
+            font-size: 16px;
+          }
+          & p {
+            font-weight: 500;
+            font-size: 12px;
           }
         }
       }

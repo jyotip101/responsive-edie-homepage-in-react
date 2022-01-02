@@ -1,6 +1,13 @@
 @media screen and (max-width: 780px) {
   .App {
-    & .home-section {
+    & header {
+      margin-left: 1rem;
+      & button {
+        visibility: visible;
+      }
+      & ul {
+        visibility: hidden;
+      }
     }
     & .services-container {
       margin: 1.5rem;
@@ -38,14 +45,49 @@
 }
 @media screen and (max-width: 520px) {
   .App {
-    & .home-section {
-    }
     & .services-container {
       margin: 1.5rem;
       & .service-contant {
         & .services-items {
           grid-template-columns: auto;
           margin: 1rem auto;
+        }
+      }
+    }
+    & .clients-container {
+      margin: 0.5rem;
+      & .clients-contant {
+        & .clients-items {
+          flex-direction: column;
+          margin: 0;
+
+          & .clients-items-item:last-child {
+            margin: 2rem 0 2rem -15px;
+          }
+        }
+        & .clients-profile {
+          & p {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    & .contact-contaniner {
+      & .contact-contant {
+        display: flex;
+        flex-direction: column;
+        & .social-icons {
+          margin: 1rem 0;
+        }
+        & .contact-field {
+          width: 100%;
+
+          & .email-control {
+            justify-content: space-between;
+            & input {
+              width: 100%;
+            }
+          }
         }
       }
     }

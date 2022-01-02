@@ -8,7 +8,7 @@ import person4 from '../images/person4.png'
 const Clients = () => {
   return (
     <>
-      <section className='clients-container'>
+      <section id='clients' className='clients-container'>
         <div className='clients-contant'>
           <div className='clients-items'>
             <div className='clients-items-item'>

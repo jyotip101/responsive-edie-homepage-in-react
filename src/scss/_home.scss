@@ -64,14 +64,14 @@
       & .btn {
         border: none;
         background-color: $main-1;
-        color: $bg-color;
+        color: #fff;
         padding: 0.5rem 1rem;
         font-size: 100%;
         border-radius: 12px;
         transition: $transition;
         cursor: pointer;
         &:hover {
-          background-color: #c53058;
+          background-color: $main-2;
         }
       }
     }

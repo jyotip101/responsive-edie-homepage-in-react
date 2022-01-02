@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  padding: 1rem 0rem;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  & h1 {
+    & a {
+      text-decoration: none;
+      color: $font-color;
+      font-weight: 900;
+      font-size: 100%;
+    }
+  }
+  & button {
+    visibility: hidden;
+  }
+  & ul {
+    display: flex;
+    margin: 0.5rem;
+
+    & li {
+      list-style: none;
+      margin: 01rem;
+
+      & a {
+        text-decoration: none;
+        color: $font-color;
+        font-weight: 800;
+        font-size: 120%;
+      }
+    }
+  }
+}

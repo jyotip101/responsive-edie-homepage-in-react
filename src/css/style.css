@@ -17,7 +17,52 @@ body {
 }
 
 .App {
-  margin: 2rem auto;
+  margin: 0rem auto 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0rem;
+  max-width: 1000px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #0d2d3e;
+  font-weight: 900;
+  font-size: 100%;
+}
+
+header button {
+  visibility: hidden;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+}
+
+header ul li {
+  list-style: none;
+  margin: 01rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #0d2d3e;
+  font-weight: 800;
+  font-size: 120%;
 }
 
 .home-section {
@@ -106,7 +151,7 @@ body {
 .home-section .input-control .input-fields .btn {
   border: none;
   background-color: #c53058;
-  color: #c4d3dc;
+  color: #fff;
   padding: 0.5rem 1rem;
   font-size: 100%;
   border-radius: 12px;
@@ -116,7 +161,7 @@ body {
 }
 
 .home-section .input-control .input-fields .btn:hover {
-  background-color: #c53058;
+  background-color: #c53058cc;
 }
 
 .services-container {
@@ -152,6 +197,7 @@ body {
 .services-container .service-contant .services-items .services-item:hover {
   -webkit-box-shadow: 0 5px 15px #0000001a;
           box-shadow: 0 5px 15px #0000001a;
+  border-radius: 5px;
 }
 
 .services-container .service-contant .services-items .services-item i {
@@ -259,10 +305,17 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-right: 1rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .ourworks-container .ourworks-contant .see-more p span {
   margin-left: 0.5rem;
+}
+
+.ourworks-container .ourworks-contant .see-more p:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .clients-container {
@@ -321,7 +374,6 @@ body {
 }
 
 .clients-container .clients-contant .clients-items .clients-items-item:last-child {
-  position: absolute;
   right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +402,175 @@ body {
   border-radius: 12px;
 }
 
+.clients-container .clients-contant .clients-profile {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+
+.clients-container .clients-contant .clients-profile p {
+  max-width: 438px;
+  width: 100%;
+  text-align: start;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.clients-container .clients-contant .clients-profile .profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients-container .clients-contant .clients-profile .profile-card img {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+}
+
+.clients-container .clients-contant .clients-profile .profile-card .desc {
+  margin: 0.5rem 1rem;
+}
+
+.clients-container .clients-contant .clients-profile .profile-card .desc h1 {
+  font-size: 16px;
+}
+
+.clients-container .clients-contant .clients-profile .profile-card .desc p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.contact-contaniner {
+  background-color: #3f7893;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+.contact-contaniner .contact-contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+}
+
+.contact-contaniner .contact-contant .links li {
+  list-style: none;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-contaniner .contact-contant .links li:hover {
+  color: #c53058;
+}
+
+.contact-contaniner .contact-contant .social-icons p span {
+  margin: 0.2rem;
+  font-size: 140%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-contaniner .contact-contant .social-icons p span:hover {
+  color: #c53058;
+}
+
+.contact-contaniner .contact-contant .contact-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-contaniner .contact-contant .contact-field label {
+  color: #c4d3dc;
+  font-size: 90%;
+}
+
+.contact-contaniner .contact-contant .contact-field .email-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fff;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.contact-contaniner .contact-contant .contact-field .email-control input {
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.contact-contaniner .contact-contant .contact-field .email-control button {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #c53058;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-contaniner .contact-contant .contact-field .email-control button:hover {
+  background: #c53058cc;
+}
+
+.contact-contaniner footer {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.contact-contaniner footer a {
+  color: #c53058;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-contaniner footer a:hover {
+  color: #c53058cc;
+}
+
 @media screen and (max-width: 780px) {
+  .App header {
+    margin-left: 1rem;
+  }
+  .App header button {
+    visibility: visible;
+  }
+  .App header ul {
+    visibility: hidden;
+  }
   .App .services-container {
     margin: 1.5rem;
   }
@@ -392,6 +612,45 @@ body {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     margin: 1rem auto;
+  }
+  .App .clients-container {
+    margin: 0.5rem;
+  }
+  .App .clients-container .clients-contant .clients-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .App .clients-container .clients-contant .clients-items .clients-items-item:last-child {
+    margin: 2rem 0 2rem -15px;
+  }
+  .App .clients-container .clients-contant .clients-profile p {
+    width: 100% !important;
+  }
+  .App .contact-contaniner .contact-contant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .contact-contaniner .contact-contant .social-icons {
+    margin: 1rem 0;
+  }
+  .App .contact-contaniner .contact-contant .contact-field {
+    width: 100%;
+  }
+  .App .contact-contaniner .contact-contant .contact-field .email-control {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .App .contact-contaniner .contact-contant .contact-field .email-control input {
+    width: 100%;
   }
 }
 

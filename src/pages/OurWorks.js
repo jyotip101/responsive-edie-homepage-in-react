@@ -8,7 +8,7 @@ import smarthome from '../images/smarthome.jpg'
 const OurWorks = () => {
   return (
     <>
-      <section className='ourworks-container'>
+      <section id='ourWorks' className='ourworks-container'>
         <div className='ourworks-contant'>
           <h1>Good design means good business</h1>
           <div className='ourworks-cards'>

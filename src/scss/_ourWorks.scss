@@ -39,8 +39,12 @@
         display: flex;
         justify-content: space-around;
         margin-right: 1rem;
+        transition: $transition;
         & span {
           margin-left: 0.5rem;
+        }
+        &:hover {
+          transform: scale(1.2);
         }
       }
     }

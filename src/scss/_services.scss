@@ -17,8 +17,10 @@
       & .services-item {
         padding: 1rem;
         transition: $transition;
+
         &:hover {
           box-shadow: $light-shadow;
+          border-radius: 5px;
         }
         & i {
           padding: 1rem;
