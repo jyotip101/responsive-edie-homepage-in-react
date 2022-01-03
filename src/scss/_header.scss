@@ -7,6 +7,7 @@ header {
   margin: 0 auto;
 
   & h1 {
+    margin-left: 1rem;
     & a {
       text-decoration: none;
       color: $font-color;
@@ -17,7 +18,7 @@ header {
   & button {
     visibility: hidden;
   }
-  & ul {
+  & .links {
     display: flex;
     margin: 0.5rem;
 
@@ -30,7 +31,14 @@ header {
         color: $font-color;
         font-weight: 800;
         font-size: 120%;
+        transition: $transition;
+        &:hover {
+          color: $main-1;
+        }
       }
     }
+  }
+  & .mobile-menu {
+    display: none;
   }
 }

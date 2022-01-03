@@ -35,6 +35,10 @@ header {
   margin: 0 auto;
 }
 
+header h1 {
+  margin-left: 1rem;
+}
+
 header h1 a {
   text-decoration: none;
   color: #0d2d3e;
@@ -46,23 +50,33 @@ header button {
   visibility: hidden;
 }
 
-header ul {
+header .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0.5rem;
 }
 
-header ul li {
+header .links li {
   list-style: none;
   margin: 01rem;
 }
 
-header ul li a {
+header .links li a {
   text-decoration: none;
   color: #0d2d3e;
   font-weight: 800;
   font-size: 120%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+header .links li a:hover {
+  color: #c53058;
+}
+
+header .mobile-menu {
+  display: none;
 }
 
 .home-section {
@@ -133,7 +147,7 @@ header ul li a {
   display: flex;
   margin: 0.2rem 0 1rem 0;
   background-color: #ddd;
-  border-radius: 3px;
+  border-radius: 3px 12px 12px 3px;
   width: 200px;
 }
 
@@ -161,7 +175,8 @@ header ul li a {
 }
 
 .home-section .input-control .input-fields .btn:hover {
-  background-color: #c53058cc;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .services-container {
@@ -387,7 +402,7 @@ header ul li a {
 }
 
 .clients-container .clients-contant .clients-items .clients-items-item:last-child .item {
-  margin: 1rem 0 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,6 +415,14 @@ header ul li a {
 .clients-container .clients-contant .clients-items .clients-items-item:last-child .item img {
   width: 100%;
   border-radius: 12px;
+}
+
+.clients-container .clients-contant .clients-items .clients-items-item:last-child .item:last-child {
+  margin-left: -5px;
+}
+
+.clients-container .clients-contant .clients-items .clients-items-item:last-child .item:last-child img:last-child {
+  margin-top: 0.5rem;
 }
 
 .clients-container .clients-contant .clients-profile {
@@ -544,7 +567,8 @@ header ul li a {
 }
 
 .contact-contaniner .contact-contant .contact-field .email-control button:hover {
-  background: #c53058cc;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact-contaniner footer {
@@ -559,18 +583,79 @@ header ul li a {
 }
 
 .contact-contaniner footer a:hover {
-  color: #c53058cc;
+  color: #c4d3dc;
 }
 
 @media screen and (max-width: 780px) {
-  .App header {
-    margin-left: 1rem;
-  }
   .App header button {
     visibility: visible;
+    position: fixed;
+    right: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
-  .App header ul {
-    visibility: hidden;
+  .App header button span {
+    font-size: 200%;
+    font-weight: 900;
+  }
+  .App header button .icon-menu {
+    color: #0d2d3e;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  .App header button .icon-close {
+    padding: 0;
+    color: #fff;
+  }
+  .App header .links {
+    display: none;
+  }
+  .App header .mobile-menu {
+    z-index: 2;
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #c53058;
+  }
+  .App header .mobile-menu .menu-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30%;
+  }
+  .App header .mobile-menu .menu-links li {
+    list-style: none;
+    margin: 1rem;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .App header .mobile-menu .menu-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 130%;
+  }
+  .App header .mobile-menu .menu-links li:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .App .services-container {
     margin: 1.5rem;

@@ -40,13 +40,19 @@
         align-items: center;
 
         & .item {
-          margin: 1rem 0 1rem 1rem;
+          margin: 1rem 1rem 1rem 1rem;
           display: flex;
           flex-direction: column;
 
           & img {
             width: 100%;
             border-radius: 12px;
+          }
+        }
+        & .item:last-child {
+          margin-left: -5px;
+          & img:last-child {
+            margin-top: 0.5rem;
           }
         }
       }

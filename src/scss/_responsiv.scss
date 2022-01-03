@@ -1,12 +1,65 @@
 @media screen and (max-width: 780px) {
   .App {
     & header {
-      margin-left: 1rem;
       & button {
         visibility: visible;
+        position: fixed;
+        right: 1rem;
+        outline: none;
+        border: none;
+        background-color: transparent;
+
+        cursor: pointer;
+        z-index: 3;
+        transition: $transition;
+        & span {
+          font-size: 200%;
+          font-weight: 900;
+        }
+        & .icon-menu {
+          color: $font-color;
+          padding: 0.5rem;
+          background-color: hsla(0, 0%, 100%, 0.5);
+          border-radius: 5px;
+        }
+        & .icon-close {
+          padding: 0;
+          color: #fff;
+        }
       }
-      & ul {
-        visibility: hidden;
+      & .links {
+        display: none;
+      }
+      & .mobile-menu {
+        z-index: 2;
+        display: block;
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: $main-1;
+
+        & .menu-links {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30%;
+          & li {
+            list-style: none;
+            margin: 1rem;
+            transition: $transition;
+            & a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 130%;
+            }
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
       }
     }
     & .services-container {

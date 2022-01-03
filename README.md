@@ -8,9 +8,9 @@
 
 <div align="center">
   <h3>
-    <!-- <a href="https://{your-demo-link.your-domain}"> -->
+    <a href="https://61d29718eeb7a40007145063--edie-homepage-in-react.netlify.app/">
       Demo
-    <!-- </a> -->
+    </a>
     <span> | </span>
     <!-- <a href="https://{your-url-to-the-solution}"> -->
       Solution
@@ -37,6 +37,12 @@
 
 ## Overview
 
+![Screenshot](https://user-images.githubusercontent.com/66724598/147909244-ae9c9db2-cfb7-4130-8525-7e988fccff63.png)
+
+![Screenshot](https://user-images.githubusercontent.com/66724598/147909017-b96df1a6-2a0f-42e6-a320-f0a7459ba555.png)
+
+![Screenshot](https://user-images.githubusercontent.com/66724598/147909149-ec079401-d91f-4a6b-92a1-1f1b633c351e.png)
+
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
  I have hosted my project on Github pages here you can see the demo.
@@ -51,7 +57,8 @@ while building this website I have learned responsive design and practiced my SC
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- SCSS
+- [SCSS](https://sass-lang.com/)
+- [icon](https://fonts.googleapis.com/icon?family=Material+Icons)
 
 ## Features
 
@@ -82,10 +89,10 @@ $ npm start
 <!--
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/) -->
 
-- [SCSS](https://sass-lang.com/documentation)
+for SCSS syntax I get the reference from [SCSS Documentation](https://sass-lang.com/documentation)
 
 ## Contact
 
+- GitHub [@jyotip101](https://github.com/jyotip101)
+- Twitter [@jyotipatil77100](https://twitter.com/jyotipatil77100)
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
-<!-- - GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username}) -->

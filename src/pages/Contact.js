@@ -29,8 +29,11 @@ const Contact = () => {
           </div>
         </div>
         <footer>
-          created by <a href='https://github.com/jyotip101'>jyoti_p</a> -
-          devChallenges.io
+          created by{' '}
+          <a href='https://github.com/jyotip101/responsive-edie-homepage-in-react'>
+            jyoti_p
+          </a>{' '}
+          - devChallenges.io
         </footer>
       </div>
     </>
