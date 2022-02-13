@@ -93,6 +93,6 @@ for SCSS syntax I get the reference from [SCSS Documentation](https://sass-lang.
 
 ## Contact
 
-- GitHub [@jyotip101](https://github.com/jyotip101)
-- Twitter [@jyotipatil77100](https://twitter.com/jyotipatil77100)
+- GitHub [@thejyotipatel](https://github.com/thejyotipatel)
+- Twitter [@thejyotipatel](https://twitter.com/thejyotipatel)
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
